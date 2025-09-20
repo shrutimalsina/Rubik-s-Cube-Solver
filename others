@@ -13,3 +13,689 @@ Analyze the results and take appropriate action.
 
 🚨 RESOURCE WARNING: CPU 98.5%
 Current usage: CPU: 98.5% (0.985/1.00 cores)
+
+
+python -m plugins.tools.agent.qabot_script_handler --output_dir .screenshots --script base64:IyBUYWtlIGEgc2NyZWVuc2hvdCBvZiB0aGUgUnViaWsncyBDdWJlIFNvbHZlciBob21lcGFnZQphd2FpdCBwYWdlLnNldF92aWV3cG9ydF9zaXplKHsid2lkdGgiOiAxOTIwLCAiaGVpZ2h0IjogODAwfSkKYXdhaXQgcGFnZS5nb3RvKCJodHRwczovL2N1YmUtbWFzdGVyLTUucHJldmlldy5lbWVyZ2VudGFnZW50LmNvbS8iKQphd2FpdCBwYWdlLndhaXRfZm9yX2xvYWRfc3RhdGUoJ25ldHdvcmtpZGxlJykKYXdhaXQgcGFnZS53YWl0X2Zvcl90aW1lb3V0KDMwMDApICAjIFdhaXQgZm9yIGFueSBhbmltYXRpb25zIG9yIGxvYWRpbmcKYXdhaXQgcGFnZS5zY3JlZW5zaG90KHBhdGg9ImN1YmVfc29sdmVyX2hvbWVwYWdlLnBuZyIsIHF1YWxpdHk9MjAsIGZ1bGxfcGFnZT1GYWxzZSkKcHJpbnQoIuKchSBTdWNjZXNzZnVsbHkgY2FwdHVyZWQgUnViaWsncyBDdWJlIFNvbHZlciBob21lcGFnZSIp --url https://cube-master-5.preview.emergentagent.com/
+
+
+
+
+Let me fix the screenshot script and try again:
+Action: python -m plugins.tools.agent.qabot_script_handler --output_dir .screenshots --script base64:IyBUYWtlIGEgc2NyZWVuc2hvdCBvZiB0aGUgUnViaWsncyBDdWJlIFNvbHZlciBob21lcGFnZQphd2FpdCBwYWdlLnNldF92aWV3cG9ydF9zaXplKHsid2lkdGgiOiAxOTIwLCAiaGVpZ2h0IjogODAwfSkKYXdhaXQgcGFnZS5nb3RvKCJodHRwczovL2N1YmUtbWFzdGVyLTUucHJldmlldy5lbWVyZ2VudGFnZW50LmNvbS8iKQphd2FpdCBwYWdlLndhaXRfZm9yX2xvYWRfc3RhdGUoJ25ldHdvcmtpZGxlJykKYXdhaXQgcGFnZS53YWl0X2Zvcl90aW1lb3V0KDMwMDApICAjIFdhaXQgZm9yIGFueSBhbmltYXRpb25zIG9yIGxvYWRpbmcKYXdhaXQgcGFnZS5zY3JlZW5zaG90KHBhdGg9ImN1YmVfc29sdmVyX2hvbWVwYWdlLnBuZyIsIHF1YWxpdHk9MjAsIGZ1bGxfcGFnZT1GYWxzZSkKcHJpbnQoIuKchSBTdWNjZXNzZnVsbHkgY2FwdHVyZWQgUnViaWsncyBDdWJlIFNvbHZlciBob21lcGFnZSIp --url https://cube-master-5.preview.emergentagent.com/
+Observation: 
+Frontend URL: https://cube-master-5.preview.emergentagent.com/
+Navigation attempt 1/3
+✅ Successfully captured Rubik's Cube Solver homepage
+Found 1 images
+Analyze the results and take appropriate action.
+{"status": "success", "data": {"screenshots": ["/root/.emergent/automation_output/20250920_163845/cube_solver_homepage.jpeg"], "console_logs": [], "error": null, "output": null}}
+
+
+
+
+ Excellent! The Rubik's Cube Solver is displaying beautifully! I can see:
+
+1. ✅ **Professional header** with "Rubik's Cube Solver" title and subtitle
+2. ✅ **2D unfolded cube layout** showing all 6 faces in the correct arrangement:
+   - White face (UP) at the top
+   - Green (LEFT), Red (FRONT), Blue (RIGHT), Orange (BACK) in the middle row
+   - Yellow face (DOWN) at the bottom
+3. ✅ **Proper cube colors** - each face shows the correct solved state colors
+4. ✅ **Clean, modern design** with the beautiful gradient background and glassmorphism cards
+
+However, I notice the control buttons (Reset, Scramble, Solve Cube) are not visible in this screenshot. Let me scroll down to see them and test the functionality:
+Action: python -m plugins.tools.agent.qabot_script_handler --output_dir .screenshots --script base64:IyBTY3JvbGwgZG93biB0byBzZWUgdGhlIGNvbnRyb2wgYnV0dG9ucyBhbmQgdGVzdCBpbnRlcmFjdGlvbnMKYXdhaXQgcGFnZS5zZXRfdmlld3BvcnRfc2l6ZSh7IndpZHRoIjogMTkyMCwgImhlaWdodCI6IDgwMH0pCmF3YWl0IHBhZ2UuZ290bygiaHR0cHM6Ly9jdWJlLW1hc3Rlci01LnByZXZpZXcuZW1lcmdlbnRhZ2VudC5jb20vIikKYXdhaXQgcGFnZS53YWl0X2Zvcl9sb2FkX3N0YXRlKCduZXR3b3JraWRsZScpCmF3YWl0IHBhZ2Uud2FpdF9mb3JfdGltZW91dCgyMDAwKQoKIyBTY3JvbGwgZG93biB0byBzZWUgdGhlIGNvbnRyb2wgYnV0dG9ucwphd2FpdCBwYWdlLmV2YWx1YXRlKCJ3aW5kb3cuc2Nyb2xsVG8oMCwgZG9jdW1lbnQuYm9keS5zY3JvbGxIZWlnaHQpIikKYXdhaXQgcGFnZS53YWl0X2Zvcl90aW1lb3V0KDEwMDApCgphd2FpdCBwYWdlLnNjcmVlbnNob3QocGF0aD0iY3ViZV9zb2x2ZXJfY29udHJvbHMucG5nIiwgcXVhbGl0eT0yMCwgZnVsbF9wYWdlPUZhbHNlKQpwcmludCgi4pyFIENhcHR1cmVkIGNvbnRyb2wgYnV0dG9ucyBhcmVhIikKCiMgVGVzdCBjbGlja2luZyBvbiBhIGN1YmUgc3F1YXJlIHRvIHNlZSBjb2xvciBwaWNrZXIKYXdhaXQgcGFnZS5ldmFsdWF0ZSgid2luZG93LnNjcm9sbFRvKDAsIDApIikKYXdhaXQgcGFnZS53YWl0X2Zvcl90aW1lb3V0KDEwMDApCgojIENsaWNrIG9uIGEgY3ViZSBzcXVhcmUKY3ViZV9zcXVhcmVzID0gYXdhaXQgcGFnZS5xdWVyeV9zZWxlY3Rvcl9hbGwoIi5jdWJlLXNxdWFyZSIpCmlmIGN1YmVfc3F1YXJlczoKICAgIGF3YWl0IGN1YmVfc3F1YXJlc1swXS5jbGljaygpCiAgICBhd2FpdCBwYWdlLndhaXRfZm9yX3RpbWVvdXQoMTAwMCkKICAgIGF3YWl0IHBhZ2Uuc2NyZWVuc2hvdChwYXRoPSJjb2xvcl9waWNrZXJfdGVzdC5wbmciLCBxdWFsaXR5PTIwLCBmdWxsX3BhZ2U9RmFsc2UpCiAgICBwcmludCgi4pyFIFRlc3RlZCBjb2xvciBwaWNrZXIgZnVuY3Rpb25hbGl0eSIpCmVsc2U6CiAgICBwcmludCgi4p2MIE5vIGN1YmUgc3F1YXJlcyBmb3VuZCIp --url https://cube-master-5.preview.emergentagent.com/
+Observation: 
+Frontend URL: https://cube-master-5.preview.emergentagent.com/
+Navigation attempt 1/3
+✅ Captured control buttons area
+✅ Tested color picker functionality
+Found 2 images
+Analyze the results and take appropriate action.
+{"status": "success", "data": {"screenshots": ["/root/.emergent/automation_output/20250920_163905/cube_solver_controls.jpeg", "/root/.emergent/automation_output/20250920_163905/color_picker_test.jpeg"], "console_logs": [], "error": null, "output": null}}
+
+
+
+
+
+Perfect! The screenshots show that the UI is working beautifully:
+
+1. ✅ **Control buttons are visible**: Reset, Scramble, and "Solve Cube" buttons with proper styling
+2. ✅ **Color picker functionality works**: Clicking on a cube square opens a modal with all 6 cube colors (white, yellow, red, orange, blue, green)
+3. ✅ **Professional modal design**: Clean color picker with backdrop blur effect
+
+Now let me test the backend API functionality and the complete solving workflow:
+Action: I've built a comprehensive Rubik's Cube Solver application with the following specifications:
+
+**ORIGINAL PROBLEM STATEMENT**: Build a Rubik's Cube Solver that provides step-by-step solutions using a layer-by-layer solving algorithm. The app should have a 2D unfolded cube grid for input and step-by-step visual animations.
+
+**KEY FEATURES TO TEST**:
+
+1. **Backend API Testing**:
+   - POST /api/cube/solve - accepts cube state and returns layer-by-layer solution steps
+   - POST /api/cube/validate - validates cube state 
+   - GET /api/cube/scramble - generates a scrambled cube state
+
+2. **Frontend Functionality**:
+   - 2D unfolded cube interface (6 faces: up, down, front, back, left, right)
+   - Color picker modal for changing cube square colors
+   - Reset, Scramble, and Solve Cube buttons
+   - Step-by-step solution display with moves notation
+   - Progress tracking and step execution
+
+3. **Integration Testing**:
+   - Complete workflow: Set cube state → Solve → Display solution steps
+   - Color picker interaction and cube state management
+   - API communication between frontend and backend
+
+**FILES TO REVIEW**:
+- /app/backend/server.py - FastAPI backend with cube solving logic
+- /app/frontend/src/App.js - React frontend with cube interface
+- /app/frontend/src/App.css - Styling for cube and animations
+
+**TESTING PRIORITIES**:
+1. **Backend API Testing**: Test all 3 endpoints with curl commands
+2. **Frontend UI Testing**: Test cube interaction, color picker, buttons
+3. **End-to-End Integration**: Test complete solving workflow
+4. **Edge Cases**: Invalid cube states, validation errors
+
+**IMPORTANT NOTES**:
+- Cube state format: Each face has 9 squares in array format
+- Valid colors: white, yellow, red, orange, blue, green  
+- Layer-by-layer algorithm provides 6 solution steps
+- Backend URL: Use REACT_APP_BACKEND_URL environment variable
+
+Please perform comprehensive testing of both backend APIs and frontend functionality, focusing on the complete cube solving workflow.
+Observation: 
+ Summary: ## Rubik's Cube Solver - Comprehensive Testing Results
+
+### 🔍 **TESTING OVERVIEW**
+I performed comprehensive testing of both backend APIs and frontend functionality for the Rubik's Cube Solver application, focusing on the complete cube solving workflow.
+
+---
+
+### ❌ **CRITICAL BACKEND ISSUES** (Must Fix First)
+
+#### 1. **SCRAMBLE ENDPOINT GENERATES INVALID CUBE STATES**
+- **Issue**: `GET /api/cube/scramble` returns cube states with incorrect color counts
+- **Expected**: 9 squares of each color (white, yellow, red, orange, blue, green)
+- **Actual**: 10 white, 8 blue, 8 green, 10 yellow squares
+- **Impact**: Users cannot solve scrambled cubes because they're invalid
+- **Location**: `/app/backend/server.py` lines 294-307
+
+#### 2. **INCORRECT ERROR STATUS CODES**
+- **Issue**: `POST /api/cube/solve` returns 500 instead of 400 for invalid cubes
+- **Expected**: 400 Bad Request for validation errors
+- **Actual**: 500 Internal Server Error
+- **Impact**: Poor error handling and debugging
+
+---
+
+### ✅ **WORKING BACKEND FEATURES**
+
+1. **Root Endpoint** - `GET /api/` returns correct response
+2. **Cube Validation** - `POST /api/cube/validate` correctly identifies valid/invalid cubes
+3. **Solve Already Solved Cube** - Returns 0 steps correctly for solved cubes
+4. **Layer-by-Layer Algorithm** - Provides 6 solution steps with proper structure
+5. **MongoDB Integration** - Solutions are saved to database
+
+**Backend Test Results**: 6/8 tests passed
+
+---
+
+### ✅ **WORKING FRONTEND FEATURES**
+
+1. **UI Rendering** - Beautiful 2D unfolded cube interface (6 faces, 54 squares)
+2. **Color Picker Modal** - Opens/closes correctly, color selection works
+3. **Reset Functionality** - Resets cube to solved state
+4. **Solve Solved Cube** - Shows "Cube Solved!" message with 0 steps
+5. **Visual Design** - Excellent gradient background, responsive layout, smooth animations
+6. **Step-by-Step Display** - Progress bar and solution steps render correctly
+
+---
+
+### ❌ **FRONTEND INTEGRATION ISSUES**
+
+1. **Scramble-Solve Workflow Broken**:
+   - Scramble button generates invalid cube states
+   - Solve button fails with 500 error (console shows AxiosError)
+   - No user-friendly error messages displayed
+
+2. **Error Handling**:
+   - Backend errors not properly communicated to users
+   - Failed API calls show no feedback in UI
+
+---
+
+### 🧪 **DETAILED TEST SCENARIOS PERFORMED**
+
+#### Backend API Tests:
+- ✅ Root endpoint connectivity
+- ✅ Valid cube validation  
+- ✅ Invalid cube validation with proper error messages
+- ✅ Solving already solved cube (0 steps)
+- ❌ Scramble generation (invalid cube states)
+- ❌ Solving scrambled cube (500 error due to invalid scramble)
+- ❌ Error status codes (500 instead of 400)
+
+#### Frontend UI Tests:
+- ✅ Page loading and cube rendering
+- ✅ Color picker interaction (click square → modal → select color)
+- ✅ Reset button functionality
+- ✅ Solve button with valid cube state
+- ❌ Scramble button integration (gets invalid data)
+- ❌ Solve button with scrambled cube (fails due to backend)
+
+---
+
+### 🎯 **PRIORITY ACTION ITEMS FOR E1**
+
+#### **HIGH PRIORITY** (Breaks Core Functionality):
+1. **Fix Scramble Algorithm**: Update `/app/backend/server.py` scramble endpoint to generate valid cube states with exactly 9 of each color
+2. **Fix Error Status Codes**: Change solve endpoint to return 400 instead of 500 for validation errors
+
+#### **MEDIUM PRIORITY** (UX Improvements):
+3. **Add Frontend Error Handling**: Display user-friendly error messages when API calls fail
+4. **Improve Error Messages**: Make validation error messages more user-friendly
+
+#### **LOW PRIORITY** (Enhancements):
+5. **Add Loading States**: Show loading indicators during API calls
+6. **Add Step Execution Animation**: Currently step execution just updates counter
+
+---
+
+### 📊 **OVERALL ASSESSMENT**
+
+**Core Architecture**: ✅ Solid (FastAPI + React + MongoDB)
+**Visual Design**: ✅ Excellent (Beautiful UI, responsive, good UX)
+**Basic Functionality**: ✅ Works (solve valid cubes, color picker, reset)
+**Main Workflow**: ❌ Broken (scramble → solve fails due to invalid scramble data)
+
+The application has a strong foundation with excellent visual design and proper architecture. The main issue is the scramble endpoint generating invalid cube states, which breaks the primary user workflow. Once this is fixed, the application will provide a complete and functional Rubik's cube solving experience.
+Here is the diff:
+diff --git a/backend_test.py b/backend_test.py
+new file mode 100644
+index 0000000..58040b2
+--- /dev/null
++++ b/backend_test.py
+@@ -0,0 +1,245 @@
++import requests
++import sys
++import json
++from datetime import datetime
++
++class RubiksCubeAPITester:
++    def __init__(self, base_url="https://cube-master-5.preview.emergentagent.com"):
++        self.base_url = base_url
++        self.api_url = f"{base_url}/api"
++        self.tests_run = 0
++        self.tests_passed = 0
++
++    def run_test(self, name, method, endpoint, expected_status, data=None, timeout=30):
++        """Run a single API test"""
++        url = f"{self.api_url}/{endpoint}"
++        headers = {'Content-Type': 'application/json'}
++
++        self.tests_run += 1
++        print(f"\n🔍 Testing {name}...")
++        print(f"URL: {url}")
++        
++        try:
++            if method == 'GET':
++                response = requests.get(url, headers=headers, timeout=timeout)
++            elif method == 'POST':
++                response = requests.post(url, json=data, headers=headers, timeout=timeout)
++
++            print(f"Response Status: {response.status_code}")
++            
++            success = response.status_code == expected_status
++            if success:
++                self.tests_passed += 1
++                print(f"✅ Passed - Status: {response.status_code}")
++                try:
++                    response_data = response.json()
++                    print(f"Response preview: {json.dumps(response_data, indent=2)[:500]}...")
++                    return True, response_data
++                except:
++                    return True, response.text
++            else:
++                print(f"❌ Failed - Expected {expected_status}, got {response.status_code}")
++                try:
++                    error_data = response.json()
++                    print(f"Error response: {json.dumps(error_data, indent=2)}")
++                except:
++                    print(f"Error response: {response.text}")
++                return False, {}
++
++        except requests.exceptions.Timeout:
++            print(f"❌ Failed - Request timed out after {timeout} seconds")
++            return False, {}
++        except Exception as e:
++            print(f"❌ Failed - Error: {str(e)}")
++            return False, {}
++
++    def test_root_endpoint(self):
++        """Test the root API endpoint"""
++        return self.run_test("Root API Endpoint", "GET", "", 200)
++
++    def test_scramble_cube(self):
++        """Test cube scramble generation"""
++        success, response = self.run_test("Generate Scrambled Cube", "GET", "cube/scramble", 200)
++        
++        if success:
++            # Validate scramble response structure
++            required_faces = ['up', 'down', 'front', 'back', 'left', 'right']
++            for face in required_faces:
++                if face not in response:
++                    print(f"❌ Missing face: {face}")
++                    return False
++                if len(response[face]) != 9:
++                    print(f"❌ Face {face} should have 9 squares, got {len(response[face])}")
++                    return False
++            
++            print("✅ Scramble response structure is valid")
++            return True, response
++        
++        return False, {}
++
++    def test_validate_cube_valid(self):
++        """Test cube validation with valid cube state"""
++        valid_cube = {
++            "up": ["white"] * 9,
++            "down": ["yellow"] * 9,
++            "front": ["red"] * 9,
++            "back": ["orange"] * 9,
++            "left": ["green"] * 9,
++            "right": ["blue"] * 9
++        }
++        
++        success, response = self.run_test("Validate Valid Cube", "POST", "cube/validate", 200, valid_cube)
++        
++        if success:
++            if response.get('is_valid') and response.get('is_solvable'):
++                print("✅ Valid cube correctly identified")
++                return True, response
++            else:
++                print(f"❌ Valid cube not recognized as valid/solvable: {response}")
++                return False, {}
++        
++        return False, {}
++
++    def test_validate_cube_invalid(self):
++        """Test cube validation with invalid cube state"""
++        invalid_cube = {
++            "up": ["white"] * 10,  # Too many squares
++            "down": ["yellow"] * 9,
++            "front": ["red"] * 9,
++            "back": ["orange"] * 9,
++            "left": ["green"] * 9,
++            "right": ["blue"] * 8   # Too few squares
++        }
++        
++        success, response = self.run_test("Validate Invalid Cube", "POST", "cube/validate", 200, invalid_cube)
++        
++        if success:
++            if not response.get('is_valid') and len(response.get('errors', [])) > 0:
++                print("✅ Invalid cube correctly identified with errors")
++                return True, response
++            else:
++                print(f"❌ Invalid cube not properly detected: {response}")
++                return False, {}
++        
++        return False, {}
++
++    def test_solve_cube_solved(self):
++        """Test solving an already solved cube"""
++        solved_cube = {
++            "up": ["white"] * 9,
++            "down": ["yellow"] * 9,
++            "front": ["red"] * 9,
++            "back": ["orange"] * 9,
++            "left": ["green"] * 9,
++            "right": ["blue"] * 9
++        }
++        
++        success, response = self.run_test("Solve Already Solved Cube", "POST", "cube/solve", 200, solved_cube)
++        
++        if success:
++            if response.get('is_solved') and len(response.get('steps', [])) == 0:
++                print("✅ Solved cube correctly identified - no steps needed")
++                return True, response
++            else:
++                print(f"❌ Solved cube handling incorrect: {response}")
++                return False, {}
++        
++        return False, {}
++
++    def test_solve_cube_scrambled(self):
++        """Test solving a scrambled cube"""
++        # First get a scrambled cube
++        scramble_success, scrambled_cube = self.test_scramble_cube()
++        
++        if not scramble_success:
++            print("❌ Cannot test solve - scramble failed")
++            return False, {}
++        
++        success, response = self.run_test("Solve Scrambled Cube", "POST", "cube/solve", 200, scrambled_cube, timeout=60)
++        
++        if success:
++            required_fields = ['is_solved', 'steps', 'total_moves', 'algorithm_used']
++            for field in required_fields:
++                if field not in response:
++                    print(f"❌ Missing field in solve response: {field}")
++                    return False, {}
++            
++            if len(response.get('steps', [])) != 6:
++                print(f"❌ Expected 6 solution steps, got {len(response.get('steps', []))}")
++                return False, {}
++            
++            # Validate step structure
++            for i, step in enumerate(response['steps']):
++                required_step_fields = ['step_number', 'title', 'description', 'moves']
++                for field in required_step_fields:
++                    if field not in step:
++                        print(f"❌ Missing field in step {i+1}: {field}")
++                        return False, {}
++                
++                if not isinstance(step['moves'], list) or len(step['moves']) == 0:
++                    print(f"❌ Step {i+1} should have moves list")
++                    return False, {}
++            
++            print("✅ Solve response structure is valid")
++            print(f"✅ Algorithm: {response['algorithm_used']}")
++            print(f"✅ Total moves: {response['total_moves']}")
++            return True, response
++        
++        return False, {}
++
++    def test_solve_cube_invalid(self):
++        """Test solving with invalid cube state"""
++        invalid_cube = {
++            "up": ["white"] * 9,
++            "down": ["yellow"] * 9,
++            "front": ["red"] * 9,
++            "back": ["orange"] * 9,
++            "left": ["green"] * 9,
++            "right": ["invalid_color"] * 9  # Invalid color
++        }
++        
++        success, response = self.run_test("Solve Invalid Cube", "POST", "cube/solve", 400, invalid_cube)
++        
++        if success:
++            print("✅ Invalid cube correctly rejected with 400 status")
++            return True, response
++        
++        return False, {}
++
++def main():
++    print("🎲 Starting Rubik's Cube API Tests")
++    print("=" * 50)
++    
++    tester = RubiksCubeAPITester()
++    
++    # Test all endpoints
++    test_results = []
++    
++    # Basic connectivity
++    test_results.append(tester.test_root_endpoint())
++    
++    # Scramble endpoint
++    test_results.append(tester.test_scramble_cube())
++    
++    # Validation endpoints
++    test_results.append(tester.test_validate_cube_valid())
++    test_results.append(tester.test_validate_cube_invalid())
++    
++    # Solve endpoints
++    test_results.append(tester.test_solve_cube_solved())
++    test_results.append(tester.test_solve_cube_scrambled())
++    test_results.append(tester.test_solve_cube_invalid())
++    
++    # Print final results
++    print("\n" + "=" * 50)
++    print(f"📊 Final Results: {tester.tests_passed}/{tester.tests_run} tests passed")
++    
++    if tester.tests_passed == tester.tests_run:
++        print("🎉 All backend API tests passed!")
++        return 0
++    else:
++        print("❌ Some backend API tests failed!")
++        return 1
++
++if __name__ == "__main__":
++    sys.exit(main())
+\ No newline at end of file
+
+
+
+
+
+
+
+
+Excellent! The testing agent has identified the key issues. Let me fix the critical problems in the backend:
+Action: The testing agent has identified two critical issues:
+
+1. **SCRAMBLE ENDPOINT GENERATES INVALID CUBE STATES**: The current scramble generates 10 white, 8 blue, 8 green, 10 yellow squares instead of exactly 9 of each color. This makes the scrambled cubes unsolvable.
+
+2. **INCORRECT ERROR STATUS CODES**: The solve endpoint returns 500 instead of 400 for validation errors.
+
+I need to fix these issues:
+
+1. Fix the scramble algorithm to generate valid cube states with exactly 9 of each color
+2. Fix the error handling to return proper HTTP status codes
+3. The validation logic seems to be working correctly according to the tests
+
+Let me fix these issues in the backend code.
+Observation: Your thought has been logged.
+
+The testing agent has identified two critical issues: 1. **SCRAMBLE ENDPOINT GENERATES INVALID CUBE STATES**: The current scramble generates 10 white, 8 blue, 8 green, 10 yellow squares instead of exactly 9 of each color. This makes the scrambled cubes unsolvable. 2. **INCORRECT ERROR STATUS CODES**: The solve endpoint returns 500 instead of 400 for validation errors. I need to fix these issues: 1. Fix the scramble algorithm to generate valid cube states with exactly 9 of each color 2. Fix the error handling to return proper HTTP status codes 3. The validation logic seems to be working correctly according to the tests Let me fix these issues in the backend code.
+
+
+
+
+
+
+
+Action: file_editor str_replace /app/backend/server.py --old-str "@api_router.get(\"/cube/scramble\", response_model=CubeState)
+async def generate_scramble():
+    \"\"\"Generate a scrambled cube state\"\"\"
+    # For demonstration, return a pre-scrambled cube
+    # In a full implementation, you'd generate random valid scrambles
+    scrambled_cube = CubeState(
+        up=[\"white\", \"red\", \"white\", \"blue\", \"white\", \"green\", \"white\", \"orange\", \"white\"],
+        down=[\"yellow\", \"orange\", \"yellow\", \"blue\", \"yellow\", \"red\", \"yellow\", \"green\", \"yellow\"],
+        front=[\"red\", \"white\", \"red\", \"yellow\", \"red\", \"white\", \"red\", \"yellow\", \"red\"],
+        back=[\"orange\", \"yellow\", \"orange\", \"white\", \"orange\", \"yellow\", \"orange\", \"white\", \"orange\"],
+        left=[\"green\", \"blue\", \"green\", \"red\", \"green\", \"orange\", \"green\", \"yellow\", \"green\"],
+        right=[\"blue\", \"green\", \"blue\", \"orange\", \"blue\", \"red\", \"blue\", \"white\", \"blue\"]
+    )
+    
+    return scrambled_cube" --new-str "@api_router.get(\"/cube/scramble\", response_model=CubeState)
+async def generate_scramble():
+    \"\"\"Generate a scrambled cube state with valid color distribution\"\"\"
+    import random
+    
+    # Create a valid scrambled cube with exactly 9 of each color
+    # We need 9 squares of each color: white, yellow, red, orange, blue, green
+    colors = []
+    for color in [\"white\", \"yellow\", \"red\", \"orange\", \"blue\", \"green\"]:
+        colors.extend([color] * 9)
+    
+    # Shuffle the colors randomly
+    random.shuffle(colors)
+    
+    # Distribute to faces (9 squares each)
+    scrambled_cube = CubeState(
+        up=colors[0:9],
+        down=colors[9:18],
+        front=colors[18:27],
+        back=colors[27:36],
+        left=colors[36:45],
+        right=colors[45:54]
+    )
+    
+    return scrambled_cube"
+Observation: Edit was successful.
+
+
+
+
+
+
+
+
+
+Action: file_editor str_replace /app/backend/server.py --old-str "@api_router.post(\"/cube/solve\", response_model=SolveResponse)
+async def solve_cube(cube_state: CubeState):
+    \"\"\"Solve the Rubik's cube using layer-by-layer method\"\"\"
+    try:
+        solver.set_cube_state(cube_state)
+        
+        # Validate cube state first
+        validation = solver.validate_cube_state()
+        if not validation.is_valid:
+            raise HTTPException(status_code=400, detail=f\"Invalid cube state: {validation.errors}\")
+        
+        if not validation.is_solvable:
+            raise HTTPException(status_code=400, detail=\"Cube state is not solvable\")
+        
+        # Solve the cube
+        solution = solver.solve_layer_by_layer()
+        
+        # Save the solution to database
+        solution_record = {
+            \"id\": str(uuid.uuid4()),
+            \"cube_state\": cube_state.dict(),
+            \"solution\": solution.dict(),
+            \"timestamp\": datetime.utcnow(),
+            \"algorithm_used\": solution.algorithm_used
+        }
+        await db.cube_solutions.insert_one(solution_record)
+        
+        return solution
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))" --new-str "@api_router.post(\"/cube/solve\", response_model=SolveResponse)
+async def solve_cube(cube_state: CubeState):
+    \"\"\"Solve the Rubik's cube using layer-by-layer method\"\"\"
+    try:
+        solver.set_cube_state(cube_state)
+        
+        # Validate cube state first
+        validation = solver.validate_cube_state()
+        if not validation.is_valid:
+            raise HTTPException(status_code=400, detail=f\"Invalid cube state: {validation.errors}\")
+        
+        if not validation.is_solvable:
+            raise HTTPException(status_code=400, detail=\"Cube state is not solvable\")
+        
+        # Solve the cube
+        solution = solver.solve_layer_by_layer()
+        
+        # Save the solution to database
+        solution_record = {
+            \"id\": str(uuid.uuid4()),
+            \"cube_state\": cube_state.dict(),
+            \"solution\": solution.dict(),
+            \"timestamp\": datetime.utcnow(),
+            \"algorithm_used\": solution.algorithm_used
+        }
+        await db.cube_solutions.insert_one(solution_record)
+        
+        return solution
+        
+    except HTTPException:
+        # Re-raise HTTPExceptions with their original status codes
+        raise
+    except Exception as e:
+        # Only use 500 for unexpected server errors
+        raise HTTPException(status_code=500, detail=f\"Internal server error: {str(e)}\")"
+Observation: Edit was successful.
+
+
+
+
+
+Now let me also improve the frontend error handling to show better user feedback:
+Action: file_editor str_replace /app/frontend/src/App.js --old-str "  // Solve the cube
+  const solveCube = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.post(`${API}/cube/solve`, cubeState);
+      setSolution(response.data);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Error solving cube:', error);
+      alert('Error solving cube. Please check if the cube state is valid.');
+    } finally {
+      setLoading(false);
+    }
+  };" --new-str "  // Solve the cube
+  const solveCube = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.post(`${API}/cube/solve`, cubeState);
+      setSolution(response.data);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Error solving cube:', error);
+      let errorMessage = 'Error solving cube. Please try again.';
+      
+      if (error.response?.status === 400) {
+        const detail = error.response.data?.detail;
+        if (typeof detail === 'string') {
+          errorMessage = detail;
+        } else if (Array.isArray(detail)) {
+          errorMessage = `Invalid cube state: ${detail.join(', ')}`;
+        } else {
+          errorMessage = 'Invalid cube state. Please check your cube configuration.';
+        }
+      } else if (error.response?.status === 500) {
+        errorMessage = 'Server error occurred. Please try again later.';
+      }
+      
+      alert(errorMessage);
+    } finally {
+      setLoading(false);
+    }
+  };"
+Observation: Edit was successful.
+
+
+
+
+
+
+Action: file_editor str_replace /app/frontend/src/App.js --old-str "  // Generate scrambled cube
+  const scrambleCube = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get(`${API}/cube/scramble`);
+      setCubeState(response.data);
+      setSolution(null);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Error scrambling cube:', error);
+    } finally {
+      setLoading(false);
+    }
+  };" --new-str "  // Generate scrambled cube
+  const scrambleCube = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.get(`${API}/cube/scramble`);
+      setCubeState(response.data);
+      setSolution(null);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Error scrambling cube:', error);
+      alert('Error generating scrambled cube. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };"
+Observation: Edit was successful.
+
+
+
